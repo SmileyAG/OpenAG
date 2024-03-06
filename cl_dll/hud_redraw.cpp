@@ -194,7 +194,8 @@ int CHud :: Redraw( float flTime, int intermission )
 		// Hack to draw some HUDs even when hud_draw is 0.
 		if (!Bench_Active()
 			&& !intermission
-			&& !(m_iHideHUDDisplay & HIDEHUD_ALL))
+			&& !(m_iHideHUDDisplay & HIDEHUD_ALL)
+			&& m_pCvarDrawExceptions->value)
 		{
 			if (m_Crosshairs.m_iFlags & HUD_ACTIVE)
 				m_Crosshairs.Draw(flTime);

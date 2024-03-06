@@ -628,6 +628,7 @@ public:
 	int		m_iRes;
 	cvar_t  *m_pCvarStealMouse;
 	cvar_t	*m_pCvarDraw;
+	cvar_t	*m_pCvarDrawExceptions;
 	cvar_t	*m_pCvarDrawDeathNoticesAlways;
 	cvar_t	*m_pCvarDrawMessagesAlways;
 	cvar_t	*m_pCvarAutostop;
